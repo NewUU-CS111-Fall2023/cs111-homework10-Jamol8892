@@ -1,13 +1,6 @@
 #include <iostream>
 #include <vector>
 
-// Definition for singly-linked list.
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(nullptr) {}
-};
-
 class Problem2 {
 public:
     static ListNode* mergeNodes(ListNode* head) {
@@ -29,7 +22,7 @@ public:
 };
 
 // Function to create a linked list from a vector of integers.
-ListNode* createLinkedList(const std::vector<int>& nums) {
+ListNode* createLinkedList2(const std::vector<int>& nums) {
     ListNode dummyProb2(0);
     ListNode* tailProb2 = &dummyProb2;
     for (int numProb2 : nums) {
@@ -40,7 +33,7 @@ ListNode* createLinkedList(const std::vector<int>& nums) {
 }
 
 // Function to print the linked list.
-void printLinkedList(ListNode* head) {
+void printLinkedList2(ListNode* head) {
     for (ListNode* nodeProb2 = head; nodeProb2 != nullptr; nodeProb2 = nodeProb2->next) {
         std::cout << nodeProb2->val << " ";
     }
@@ -48,7 +41,7 @@ void printLinkedList(ListNode* head) {
 }
 
 // Function to delete the linked list and free memory.
-void deleteLinkedList(ListNode* head) {
+void deleteLinkedList2(ListNode* head) {
     while (head != nullptr) {
         ListNode* tempProb2 = head;
         head = head->next;
